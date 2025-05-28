@@ -1,6 +1,6 @@
 # AI Image Studio 🎨
 
-**AI Image Studio** is a web application that leverages Stable Diffusion with ControlNet to generate images based on user-uploaded images and prompts. The project combines a **FastAPI** backend with a **React** frontend, orchestrated using **Docker** and **RabbitMQ** for asynchronous task processing. It supports multiple preprocessors (Canny Edge, Pose, and Depth) to guide image generation.
+**AI Image Studio** is a web application that leverages [Stable Diffusion](https://github.com/CompVis/stable-diffusion) with [ControlNet](https://github.com/lllyasviel/ControlNet) to generate images based on user-uploaded images and prompts. The project combines a **FastAPI** backend with a **React** frontend, orchestrated using **Docker** and **RabbitMQ** for asynchronous task processing. It supports multiple preprocessors (Canny Edge, Pose, and Depth) to guide image generation.
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python) ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green?logo=fastapi) ![React](https://img.shields.io/badge/React-18-blue?logo=react) ![Docker](https://img.shields.io/badge/Docker-Compose-blue?logo=docker) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3.13-orange?logo=rabbitmq)
 
