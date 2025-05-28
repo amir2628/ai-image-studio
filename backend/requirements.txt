@@ -1,0 +1,20 @@
+fastapi
+uvicorn
+python-multipart
+aio-pika
+sqlalchemy
+asyncpg
+pillow
+numpy
+torch
+torchvision
+opencv-python
+controlnet-aux
+diffusers
+transformers
+accelerate
+safetensors
+requests
+mediapipe
+timm
+git+https://github.com/reallyigor/easy_dwpose.git@main  # Add easy_dwpose

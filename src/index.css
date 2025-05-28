@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: theme('colors.primary.500');
+  --accent-color: theme('colors.accent.500');
+}
+
+:root[data-theme='light'] {
+  --bg-color: theme('colors.gray.100');
+  --text-color: theme('colors.gray.900');
+  --surface-color: theme('colors.white');
+  --surface-hover: theme('colors.gray.100');
+  --border-color: theme('colors.gray.200');
+}
+
+:root[data-theme='dark'] {
+  --bg-color: theme('colors.surface.950');
+  --text-color: theme('colors.white');
+  --surface-color: theme('colors.surface.900');
+  --surface-hover: theme('colors.surface.800');
+  --border-color: theme('colors.surface.700');
+}
+
+@layer base {
+  body {
+    @apply bg-surface-950 text-white;
+    font-family: 'Inter', 'SF Pro Display', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium leading-tight;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-surface-900/70 backdrop-blur-md border border-surface-700/50 rounded-xl;
+  }
+  
+  .glass-button {
+    @apply bg-surface-800/70 hover:bg-surface-700/70 backdrop-blur-md border border-surface-600/50 rounded-lg 
+           transition-all duration-300 hover:shadow-glow;
+  }
+  
+  .primary-button {
+    @apply bg-primary-600 hover:bg-primary-500 text-white font-medium py-2 px-4 rounded-lg
+           transition-all duration-300 hover:shadow-glow;
+  }
+  
+  .input-field {
+    @apply bg-surface-800/70 border border-surface-700/50 rounded-lg px-4 py-2 text-white
+           focus:ring-2 focus:ring-primary-500 focus:border-primary-500 focus:outline-none
+           transition-all duration-300;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-surface-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-surface-600;
+}
+
+/* Grid background */
+.grid-bg {
+  background-size: 20px 20px;
+  @apply bg-grid-pattern;
+}

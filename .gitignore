@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.env
+.env.*
+*.sqlite3
+*.log
+*.db
+*.pot
+*.pyc
+instance/
+.mypy_cache/
+.pytest_cache/
+.vscode/
+
+# FastAPI dependencies
+venv/
+.env
+alembic.ini
+alembic/
+
+# Node.js / React
+node_modules/
+build/
+dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.iml
+
+# Optional: test coverage
+.coverage
+htmlcov/
+coverage.xml
+*.pth
+*.onnx
+
+# Optional: frontend tooling
+.cache/
+.eslintcache
+.next/
+out/
