@@ -4,6 +4,8 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python) ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green?logo=fastapi) ![React](https://img.shields.io/badge/React-18-blue?logo=react) ![Docker](https://img.shields.io/badge/Docker-Compose-blue?logo=docker) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3.13-orange?logo=rabbitmq)
 
+<img width="1232" alt="Image" src="https://github.com/user-attachments/assets/45ea4bf4-7181-44c5-9a06-d1f8f3cfe574" />
+
 ## 🚀 Features
 
 - **Image Generation**: Generate images using Stable Diffusion with ControlNet models (Canny, Pose, Depth).
